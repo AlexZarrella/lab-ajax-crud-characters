@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="./public/stylesheets/style.css">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
 
   <title>IH Characters</title>
 </head>
@@ -24,15 +27,16 @@
     <section class="operations">
       <div class="operation">
         <button id="fetch-all">Fetch all</button>
+        <div id= "allCharacters-div"></div>
       </div>
       <div class="operation">
         <label for="character-id">Search by ID: </label>
-        <input type="text" name="character-id">
+        <input type="text" id="character-id">
         <button id="fetch-one">Fetch one</button>
       </div>
       <div class="operation delete">
         <label for="character-id-delete">Delete by ID: </label>
-        <input type="text" name="character-id-delete">
+        <input type="text" id="character-id-delete">
         <button id="delete-one">Delete one</button>
       </div>
 
